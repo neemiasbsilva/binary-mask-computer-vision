@@ -14,3 +14,4 @@ def show_b_mask(img_original, img_binary):
     plt.imshow(img_binary)
     plt.title("Binary Image")
     plt.axis('off')
+    plt.show()
