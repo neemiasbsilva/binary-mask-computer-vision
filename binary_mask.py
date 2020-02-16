@@ -14,6 +14,6 @@ def binary_mask(path, r, g, b, k):
     img_binary = np.uint8(img_binary)
     img_binary *= 255
 
-    return img_binary
+    return img, img_binary
 
 
