@@ -1,4 +1,6 @@
 from binary_mask import binary_mask
+from show_b_mask import show_b_mask
+
 
 def main():
 
@@ -13,7 +15,10 @@ def main():
     print("Choose the value of parameter k:", end=' ')
     k = float(input())
 
-    img_binary = binary_mask(path, r, g, b, k)    
+    img_original, img_binary = binary_mask(path, r, g, b, k)    
 
+    # visualize the result using the binary mask technique
+    show_b_mask(img_original, img_binary)
+    
 if __name__ == "__main__":
     main()
