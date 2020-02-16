@@ -11,7 +11,7 @@ def show_b_mask(img_original, img_binary):
     plt.axis('off')
     # Plot the Binary image
     plt.subplot(122)
-    plt.imshow(img_binary)
-    plt.title("Binary Image", cmap='gray')
+    plt.imshow(img_binary, cmap='gray')
+    plt.title("Binary Image")
     plt.axis('off')
     plt.show()
